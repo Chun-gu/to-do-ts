@@ -1,14 +1,14 @@
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./style/GlobalStyle";
 import { darkTheme, lightTheme } from "./style/theme";
-import ToDoList from "./components/ToDoList";
+import GlobalStyle from "./style/GlobalStyle";
+import ToDo from "./components/ToDo";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-        <ToDoList />
+        <ToDo />
       </ThemeProvider>
     </>
   );
